@@ -1,6 +1,6 @@
 # NVIM Config
 
-A personal **Neovim configuration** built on top of **LazyVim starter**.
+My **Neovim configuration** built on top of **LazyVim starter**.
 
 This config keeps most of LazyVim’s sane defaults while adding a few more feature like Harpoon and autu complete for HTML/CSS.
 
@@ -9,7 +9,7 @@ This config keeps most of LazyVim’s sane defaults while adding a few more feat
 ### 🚀 Harpoon Navigation
 
 * Quick file marking and jumping
-* 
+  
 ### 🌐 Enhanced HTML / CSS Autocompletion
 
 * Improved autocomplete for:
@@ -17,7 +17,7 @@ This config keeps most of LazyVim’s sane defaults while adding a few more feat
   * HTML tags
   * CSS properties
   * Class names
-  * 
+    
 Everything else stays close to the LazyVim..
 
 ---
@@ -70,20 +70,6 @@ nvim
 ```
 
 Lazy.nvim will automatically install all plugins on first launch.
-
----
-
-## 📁 Structure Overview
-
-```text
-nvim/
-├── lua/
-│   ├── config/        # Core settings
-│   ├── plugins/       # Plugin specs & overrides
-│   └── keymaps.lua    # Custom keybindings
-├── init.lua
-└── README.md
-```
 
 ---
 
