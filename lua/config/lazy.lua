@@ -20,6 +20,26 @@ require("lazy").setup({
     { "LazyVim/LazyVim",                                 import = "lazyvim.plugins" },
     -- import/override with your plugins
     { import = "lazyvim.plugins.extras.editor.harpoon2", },
+
+    {
+      "folke/flash.nvim",
+      keys = {
+        { "s", mode = { "n", "x", "o" }, false },
+        { "S", mode = { "n", "x", "o" }, false },
+      },
+    },
+
+    -- nvim-surround: dst deletes surrounding tag and keeps content, out of the box
+    {
+      "kylechui/nvim-surround",
+      version = "^4.0.0",
+      event = "VeryLazy",
+      config = function()
+        require("nvim-surround").setup()
+      end,
+    },
+
+
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
@@ -50,4 +70,5 @@ require("lazy").setup({
       },
     },
   },
+
 })
