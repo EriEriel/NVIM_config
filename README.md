@@ -57,13 +57,13 @@ Typical key usage:
 
 ## Multicursors Basics
 
-  <leader> n - extend cursor down to matching word
-  <leader> N - extend cursor up to matching word
+```<leader>``` n - extend cursor down to matching word
+```<leader>``` N - extend cursor up to matching word
   
-  In visual mode 
-  <C-down> extend cursor down
-  <C-up> extend cursor up 
-  
+In visual mode 
+```<C-down>``` extend cursor down
+```<C-up>``` extend cursor up 
+
 ---
 
 ## 🛠 Installation
