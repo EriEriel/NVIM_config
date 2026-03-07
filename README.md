@@ -2,7 +2,7 @@
 
 My **Neovim configuration** built on top of **LazyVim starter**.
 
-This config keeps most of LazyVim’s sane defaults while adding a few more feature like Harpoon and autu complete for HTML/CSS.
+This config keeps most of LazyVim’s defaults configuration while adding a few more feature like Harpoon and auto complete for HTML/CSS etc.
 
 ---
 
@@ -17,10 +17,18 @@ This config keeps most of LazyVim’s sane defaults while adding a few more feat
   * HTML tags
   * CSS properties
   * Class names
-    
-Everything else stays close to the LazyVim..
+  * TS/JS React
+  * Tailwind CSS
 
----
+### Multicursors and dst config
+
+  * Multicursors plugin for multi line fast editing
+  * ```dst``` for delete surrounding tags like <div>Hello world</div> -> Hello world
+
+### 🐘 PostgresSQL
+
+  * Vim-dadbod and PostgresSQL
+  * ```:DBUI``` to open Vim-dadbod
 
 ## 📦 Included Features
 
@@ -47,6 +55,15 @@ Typical key usage:
 * Add file to Harpoon
 * Jump between marked files
 
+## Multicursors Basics
+
+  <leader> n - extend cursor down to matching word
+  <leader> N - extend cursor up to matching word
+  
+  In visual mode 
+  <C-down> extend cursor down
+  <C-up> extend cursor up 
+  
 ---
 
 ## 🛠 Installation
