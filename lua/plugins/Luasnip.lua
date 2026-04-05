@@ -3,6 +3,7 @@ return {
     "L3MON4D3/LuaSnip",
     config = function()
       local ls = require("luasnip")
+      ls.filetype_extend("typescriptreact", { "typescript" })
 
       -- Basic configuration
       ls.config.set_config({

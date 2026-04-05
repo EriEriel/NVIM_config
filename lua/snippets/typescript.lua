@@ -54,33 +54,29 @@ export const {} = ({{ children }}: {}Props) => {{
   -- React client component with useState
   s("rcc", fmt([[
 "use client";
-
 import {{ useState }} from "react";
-
 interface {}Props {{
   {}
 }}
-
 export function {}({{ {} }}: {}Props) {{
   const [{}, set{}] = useState({});
-
   return (
     <div>
       {}
     </div>
   );
 }}
-]], { {
-    i(1, "MyComponent"),
-    i(2, ""),
-    rep(1),
-    i(4, ""),
-    rep(1),
-    i(6, "value"),
-    rep(6),
-    i(8, "null"),
-    i(9, ""),
-  } })),
+]], {
+    i(1, "MyComponent"), -- component name
+    i(2, ""),            -- Props fields
+    rep(1),              -- rep in function name
+    i(3, ""),            -- destructured props
+    rep(1),              -- rep in Props type
+    i(4, "value"),       -- state name
+    rep(4),              -- setValue mirrors i(4)
+    i(5, "null"),        -- initial state
+    i(0),                -- final cursor
+  })),
 
   --Next.js page
   s("nxpage", fmt([[
@@ -99,12 +95,12 @@ export default async function {}Page({{ searchParams }}: PageProps) {{
     </main>
   );
 }}
-]], { {
+]], {
     i(1, "My"),
     i(2, "q"),
     i(3, "// fetch data"),
     i(4, ""),
-  } })),
+  })),
 
   --Next.js Layout
   s("nxlay", fmt([[
@@ -119,9 +115,9 @@ export default function {}Layout({{
     </div>
   );
 }}
-]], { {
+]], {
     i(1, "My"),
     i(2, ""),
-  } })),
+  })),
 
 }
