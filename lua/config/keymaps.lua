@@ -22,7 +22,11 @@ vim.keymap.set('n', '<leader>fg', tb.live_grep, { desc = 'Live grep' })
 vim.keymap.set('n', '<leader>fb', tb.buffers, { desc = 'Find buffers' })
 
 -- In your LuaSnip config or keymaps.lua
-vim.keymap.set({ "i", "s", }, "<Tab>", function()
+vim.keymap.set({ "i", "s" }, "<Tab>", function()
+  local blink_ok, blink = pcall(require, "blink.cmp")
+  if blink_ok and blink.is_visible() then
+    blink.hide()
+  end
   if ls.expand_or_jumpable() then
     ls.expand_or_jump()
   else

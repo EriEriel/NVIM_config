@@ -20,7 +20,7 @@ try {{
     -- Dynamic Node: allows the content to be editable
     d(1, function(_, snip)
       local selection = snip.env.TM_SELECTED_TEXT
-      -- Add the nil check here!
+
       if selection and selection[1] and #selection[1] > 0 then
         return sn(nil, { i(1, selection) })
       end
