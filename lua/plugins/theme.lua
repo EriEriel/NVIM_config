@@ -1,1 +1,13 @@
-/home/eri/.config/omarchy/current/theme/neovim.lua
+return {
+  {
+    "folke/tokyonight.nvim",
+    name = "tokyonight",
+    priority = 1000,
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "tokyonight",
+    },
+  },
+}
