@@ -30,6 +30,12 @@ This config keeps most of LazyVim’s defaults configuration while adding a few 
   * Vim-dadbod and PostgresSQL
   * ```:DBUI``` to open Vim-dadbod
 
+### 📡 HTTP / REST Client (Kulala)
+
+  * Interactive HTTP/REST client inside Neovim for testing APIs
+  * Execute requests directly from `.http` and `.rest` files
+  * View headers, body, or formatted outputs in a split pane
+
 ## 📦 Included Features
 
 * Lazy.nvim plugin manager
@@ -39,6 +45,7 @@ This config keeps most of LazyVim’s defaults configuration while adding a few 
 * Telescope fuzzy finder
 * Git integration
 * Harpoon for fast file navigation
+* Kulala.nvim (REST/HTTP Client)
 
 ---
 
@@ -63,6 +70,17 @@ Typical key usage:
 In visual mode 
 ```<C-down>``` extend cursor down
 ```<C-up>``` extend cursor up 
+
+## 📡 Kulala (REST Client) Basics
+
+Execute HTTP/REST requests directly from `.http` or `.rest` files using the following keymaps (prefixed with `<leader>R`):
+
+* `<leader>Rs` — Send request under the cursor
+* `<leader>Ra` — Send all requests in the buffer
+* `<leader>Rb` — Open Kulala scratchpad
+* `<leader>Rr` — Replay the last request
+* `<leader>Rco` — Copy the request as a `curl` command
+* `<leader>Rt` — Toggle headers and body view in the response window
 
 ---
 

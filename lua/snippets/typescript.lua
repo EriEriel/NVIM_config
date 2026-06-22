@@ -31,7 +31,7 @@ try {{
   })),
 
   -- React server component
-  s("rsc", fmt([[
+  s("Rsc", fmt([[
 interface {}Props {{
   children?: React.ReactNode;
 }}
@@ -52,7 +52,7 @@ export const {} = ({{ children }}: {}Props) => {{
   })),
 
   -- React client component with useState
-  s("rcc", fmt([[
+  s("Rcc", fmt([[
 "use client";
 import {{ useState }} from "react";
 interface {}Props {{
